@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #000;
+  --main-text-color: #fff;
+  --secondary-text-color: #6c757d;
+  --primary-btn-color: #dc3545;
+  --secondary-btn-color: #198754;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--body-color);
+  color: var(--main-text-color);
+}
+
+/* navbar started */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo a img {
+  width: 165px;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 2rem;
+}
+
+.franchies-btn {
+  padding: 7px 16px;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+}
+
+.order-btn {
+  padding: 7px 16px;
+  font-size: 1.5rem;
+  background-color: var(--primary-btn-color);
+  color: var(--main-text-color);
+  border-radius: 30px;
+  border: none;
+}
+
+.arrow-btn {
+  padding: 5px 8px;
+  color: var(--primary-btn-color);
+  background-color: var(--main-text-color);
+  border-radius: 30px;
+}
+/* navbar ended */
