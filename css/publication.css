@@ -77,12 +77,38 @@ body {
 
 /* main started */
 
-/* hero-img-section started */
-.hero-img img {
-  width: 100%;
-  margin-top: 15px;
+/* hero images started */
+.hero-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0px 111px;
 }
-/* hero-img-section ended */
+
+.hero-images img {
+  width: 45%;
+  height: 85vh;
+  border: 1px solid gray;
+}
+/* hero images ended */
+
+/* branches address started */
+.branches {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.branches h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.branches div p {
+  text-align: center;
+  line-height: 2.5;
+}
+/* branches address ended */
 
 /* main ended */
 
