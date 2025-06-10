@@ -205,8 +205,6 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 30px;
-  /* align-items: center; */
-
   line-height: 30px;
 }
 
@@ -257,8 +255,18 @@ body {
 /* Restaurant Franchises ended */
 
 /* Express Franchises started */
+.express-franchises {
+  margin: 20px 0px;
+}
 .express-franchises > h1 {
   text-align: center;
+  font-size: 48px;
+}
+.express-franchises > h1 > span {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
 }
 
 .container {
@@ -269,8 +277,9 @@ body {
 }
 .sub-container {
   width: 30%;
-  line-height: 30px;
+  line-height: 40px;
   margin: 20px;
+  text-align: center;
 }
 .sub-container div img {
   width: 100%;
@@ -279,16 +288,31 @@ body {
   object-fit: cover;
 }
 
-.sub-container div h2 {
-  color: var(--primary-btn-color);
+.sub-container div h1 {
+  font-size: 32px;
+  font-family: "apercu";
+  font-weight: 400;
 }
 
+.sub-container div h2 {
+  color: var(--primary-btn-color);
+  font-family: "apercu";
+  letter-spacing: 5px;
+}
+.sub-container div p {
+  font-family: "apercu";
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+}
 .sub-container div button {
+  margin-top: 20px;
   padding: 15px 20px;
   background-color: var(--body-color);
   color: var(--main-text-color);
   border: 1px solid gray;
   border-radius: 20px;
+  font-family: "inter";
+  font-weight: 500;
 }
 
 .sub-container div button span {
@@ -309,23 +333,56 @@ body {
 .sub-franchise-container-heading {
   text-align: center;
 }
+.sub-franchise-container-heading h1 {
+  font-size: 52px;
+  font-family: "apercu";
+  font-weight: 400;
+}
+.sub-franchise-container-heading h1 span {
+  font-family: "futurak";
+}
+
+.franchise-container > .sub-franchise-container-heading {
+  padding: 0px 25px;
+  text-align: center;
+  width: 100%;
+}
 
 .franchise-container div {
   width: 50%;
-  padding: 0px 25px;
-}
-
-.franchise-container div img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .sub-franchise-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 30px 120px;
-  line-height: 34px;
+  margin: 30px 0px;
+  line-height: 55px;
+}
+.sub-franchise-container div img {
+  margin-left: 30px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.sub-franchise-container div h2 {
+  color: var(--primary-btn-color);
+  letter-spacing: 10px;
+  font-family: "apercu";
+  font-size: 16px;
+}
+.sub-franchise-container div h1 {
+  font-family: "apercu";
+  font-size: 32px;
+}
+.sub-franchise-container div h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+}
+.sub-franchise-container div p {
+  color: var(--secondary-text-color);
+  font-family: "apercu";
+  font-size: 16px;
 }
 
 .sub-franchise-container button {
@@ -334,6 +391,7 @@ body {
   color: var(--main-text-color);
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 .sub-franchise-container button span {
   color: #28a745;
@@ -350,6 +408,16 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.coming-soon-heading > h1 {
+  font-size: 52px;
+  font-family: "apercu";
+  font-weight: 400;
+  text-align: center;
+}
+.coming-soon-heading > h1 > span {
+  font-family: "futurak";
+  font-weight: 400;
+}
 
 .coming-soon {
   width: 25%;
@@ -358,19 +426,36 @@ body {
   border-radius: 4px;
   text-align: center;
   padding: 25px 24px;
-  margin: 0px 30px;
+  margin: 20px 30px;
   margin-bottom: 32px;
   color: var(--body-color);
   line-height: 25px;
 }
 .coming-soon h2 {
   color: var(--primary-btn-color);
+  font-family: 'apercu';
+  letter-spacing: 5px;
+  font-size: 1.2rem;
 }
+.coming-soon h1 {
+  font-family: 'apercu';
+  font-size: 2rem;
+}
+.coming-soon h1 span{
+  font-family: 'futurak';
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
 /* Salt'n Pepper  Franchise (coming soon) ended */
 
 /* Social Feed started */
 .social-feed h1 {
+  margin-top: 30px;
   text-align: center;
+  font-family: 'butler';
+  font-size: 4rem;
+  letter-spacing: 5px;
 }
 
 .social-feed-images {
@@ -381,7 +466,7 @@ body {
 }
 .social-feed-images img {
   width: 18vw;
-  height: 50vh;
+  height: 30vh;
   border-radius: 10px;
 }
 /* Social Feed ended */
