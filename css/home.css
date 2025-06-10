@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "futurak";
+  src: url("../fonts/futurak.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "butler";
+  src: url("../fonts/Butler_Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "apercu";
+  src: url("../fonts/Apercu-regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +26,7 @@
 
 :root {
   --body-color: #000;
+  --sub-body-color: #0f0f0f;
   --main-text-color: #fff;
   --secondary-text-color: #6c757d;
   --primary-btn-color: #dc3545;
@@ -44,7 +65,12 @@ body {
 .navbar ul li a {
   text-decoration: none;
   color: var(--main-text-color);
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar ul li a button {
+  font-family: "Inter", sans-serif;
 }
 
 .franchies-btn {
@@ -78,11 +104,287 @@ body {
 /* main started */
 
 /* hero-img-section started */
+
 .hero-img img {
   width: 100%;
   margin-top: 15px;
 }
+
+.hero-main-heading h1 {
+  font-family: "apercu";
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.font-style-futurak {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+}
+.hero-main-heading p {
+  font-family: "apercu";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
 /* hero-img-section ended */
+
+/* order and booking section started */
+.order-and-booking {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 100px;
+}
+.order-one,
+.order-two,
+.order-three,
+.booking-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-one img,
+.order-two img,
+.order-three img,
+.booking-one img {
+  background-color: var(--main-text-color);
+  border-radius: 10px;
+  padding: 0px 19px;
+  height: 27vh;
+  width: 95%;
+  height: 100%;
+}
+
+.order-one button,
+.order-two button,
+.order-three button,
+.booking-one button {
+  padding: 10px 32px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/* order and booking section ended */
+
+/* Restaurant Franchises started */
+.restaurant-franchises {
+  background-color: var(--sub-body-color);
+}
+.sub-heading {
+  text-align: center;
+}
+.sub-heading h1 {
+  font-family: "butler";
+  font-size: 48px;
+}
+.sub-heading h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+  line-height: 62px;
+  font-size: 52px;
+}
+.sub-heading p {
+  font-family: "apercu";
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.restaurant-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  /* align-items: center; */
+
+  line-height: 30px;
+}
+
+.restaurant-container h2 {
+  color: var(--primary-btn-color);
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.restaurant-container div h1 {
+  font-family: "apercu";
+  font-size: 32px;
+}
+.restaurant-container div p {
+  font-family: "apercu";
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.restaurant-container div h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 62px;
+}
+.restaurant-container div button {
+  padding: 15px 32px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 30px 0px;
+  font-size: 1.5rem;
+}
+.restaurant-container div button span {
+  margin-left: 20px;
+  padding: 10px;
+  color: var(--primary-btn-color);
+  background-color: var(--main-text-color);
+  border-radius: 20px;
+}
+
+.restaurant-container img {
+  margin: 0px 50px;
+  width: 80%;
+}
+/* Restaurant Franchises ended */
+
+/* Express Franchises started */
+.express-franchises > h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px 65px;
+}
+.sub-container {
+  width: 30%;
+  line-height: 30px;
+  margin: 20px;
+}
+.sub-container div img {
+  width: 100%;
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sub-container div h2 {
+  color: var(--primary-btn-color);
+}
+
+.sub-container div button {
+  padding: 15px 20px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.sub-container div button span {
+  background-color: var(--main-text-color);
+  color: var(--primary-btn-color);
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+/* Express Franchises ended */
+
+/* Salt'n Pepper Village Franchise started */
+
+.franchise-container {
+  background-color: var(--sub-body-color);
+}
+
+.sub-franchise-container-heading {
+  text-align: center;
+}
+
+.franchise-container div {
+  width: 50%;
+  padding: 0px 25px;
+}
+
+.franchise-container div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sub-franchise-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 30px 120px;
+  line-height: 34px;
+}
+
+.sub-franchise-container button {
+  padding: 15px 20px;
+  background-color: #28a745;
+  color: var(--main-text-color);
+  border: none;
+  border-radius: 20px;
+}
+.sub-franchise-container button span {
+  color: #28a745;
+  background-color: var(--main-text-color);
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+/* Salt'n Pepper Village Franchise ended */
+
+/* Salt'n Pepper  Franchise (coming soon) started */
+.franchise-coming-soon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.coming-soon {
+  width: 25%;
+  height: 230px;
+  background: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 25px 24px;
+  margin: 0px 30px;
+  margin-bottom: 32px;
+  color: var(--body-color);
+  line-height: 25px;
+}
+.coming-soon h2 {
+  color: var(--primary-btn-color);
+}
+/* Salt'n Pepper  Franchise (coming soon) ended */
+
+/* Social Feed started */
+.social-feed h1 {
+  text-align: center;
+}
+
+.social-feed-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px 30px;
+}
+.social-feed-images img {
+  width: 18vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+/* Social Feed ended */
 
 /* main ended */
 
@@ -146,12 +448,11 @@ body {
 }
 .footer-social-links div span i {
   border: none;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--primary-btn-color);
   border-radius: 30px;
   margin: 0px 2px;
 }
-
 
 .footer-sub {
   display: flex;

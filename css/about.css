@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -42,29 +43,32 @@ body {
 }
 
 .navbar ul li a {
-  text-decoration: none;
-  color: var(--main-text-color);
-  font-size: 2rem;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .franchies-btn {
-  padding: 7px 16px;
-  font-size: 1.5rem;
-  border: 1px solid white;
-  border-radius: 30px;
-  background-color: var(--body-color);
-  color: var(--main-text-color);
-  cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 7px 16px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: var(--body-color);
+    color: var(--main-text-color);
+    cursor: pointer;
 }
 
 .order-btn {
-  padding: 7px 16px;
-  font-size: 1.5rem;
-  background-color: var(--primary-btn-color);
-  color: var(--main-text-color);
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 7px 16px;
+    background-color: var(--primary-btn-color);
+    color: var(--main-text-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
 }
 
 .arrow-btn {
@@ -75,6 +79,80 @@ body {
 }
 /* navbar ended */
 
+/* main started */
+/* into container started */
+.intro-container {
+  text-align: center;
+}
+
+.resturant-container {
+  text-align: center;
+}
+.container {
+  display: flex;
+  margin: 10px 50px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.container div img {
+  width: 50vw;
+  height: 50vh;
+}
+/* into container ended */
+
+/* sub-section started */
+.sub-section {
+  text-align: center;
+  padding: 50px 100px;
+  margin-bottom: 30px;
+}
+/* sub-section ended */
+
+/* locations resturant started  */
+
+.resturant-container {
+  padding: 50px 100px;
+  margin-bottom: 30px;
+}
+
+.intro-container h1,
+.resturant-container h1,
+.container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--main-text-color);
+}
+
+.intro-container p,
+.resturant-container p,
+.container p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+}
+
+.container {
+  padding: 30px 0;
+  align-items: center;
+  background-color: var(--body-color);
+  margin: 30px 100px;
+}
+
+.container div {
+  flex: 1;
+  padding: 20px;
+}
+
+.container div img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* locations resturant ended  */
+/* main ended */
 
 /* footer started */
 .footer-main {
@@ -104,11 +182,15 @@ body {
   font-size: 1.05rem;
   line-height: 1.7;
 }
+.footer-addresses {
+  margin-bottom: 10px;
+}
 
 .footer-links h2,
 .footer-addresses h2,
 .footer-social-links h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin-top: 20px;
   padding-bottom: 10px;
 }
@@ -120,7 +202,8 @@ body {
 }
 .footer-links a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
   padding: 5px 0px;
   color: var(--main-text-color);
 }
@@ -136,17 +219,16 @@ body {
 }
 .footer-social-links div span i {
   border: none;
-  padding: 20px;
+  padding: 13px;
   background-color: var(--primary-btn-color);
-  border-radius: 30px;
+  border-radius: 50px;
   margin: 0px 2px;
 }
-
 
 .footer-sub {
   display: flex;
   justify-content: space-between;
-  margin: 5px 30px;
+  margin: 15px 85px;
 }
 
 /* footer ended */
