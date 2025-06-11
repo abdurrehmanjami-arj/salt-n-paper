@@ -141,7 +141,7 @@ select {
   color: var(--secondary-text-color);
 }
 
-button {
+#submit-btn {
   width: 10%;
   padding: 15px;
   border-radius: 10px;
