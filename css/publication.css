@@ -65,7 +65,12 @@ body {
 .navbar ul li a {
   text-decoration: none;
   color: var(--main-text-color);
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar ul li a button {
+  font-family: "Inter", sans-serif;
 }
 
 .franchies-btn {
