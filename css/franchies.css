@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "futurak";
+  src: url("../fonts/futurak.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "butler";
+  src: url("../fonts/Butler_Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "apercu";
+  src: url("../fonts/Apercu-regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -75,24 +95,82 @@ body {
 }
 /* navbar ended */
 
+/* main started */
+
+/* Get a Franchise started started */
+.franchies h1 {
+  text-align: center;
+  font-family: "butler";
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 30px 0px;
+}
+
+.franchies-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.franchies-form div {
+  width: 35vw;
+}
+.franchies-form div input,
+.franchies-form div select {
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.franchies-form div label {
+  font-size: 2rem;
+  font-family: "apercu";
+  color: var(--secondary-text-color);
+}
+[type="text"],
+[type="email"],
+[type="number"],
+select {
+  padding: 10px;
+  font-size: 2rem;
+}
+.franchies-form div select {
+  color: var(--secondary-text-color);
+}
+
+button {
+  width: 10%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 186px;
+  margin-bottom: 30px;
+  background-color: #ffca2c;
+  color: var(--main-text-color);
+  font-size: 1.7rem;
+  font-family: "inter";
+}
+/* Get a Franchise started ended */
+
+/* main ended */
 
 /* footer started */
 .footer-main {
-  background-color: #0f0f0f;
+  background-color: var(--sub-body-color);
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 100%;
-  padding: 0px 20px;
 }
 
 .fotter-info,
 .footer-links,
 .footer-addresses,
 .footer-social-links {
-  flex: 1;
-  padding: 0px 70px;
+  padding: 0px 35px;
+  width: 23vw;
+  margin: 20px 11px;
 }
 .fotter-info img {
   max-width: 200px;
@@ -101,16 +179,40 @@ body {
 }
 .fotter-info p {
   margin-bottom: 15px;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.7;
+  font-family: "apercu";
+  color: var(--secondary-text-color);
 }
 
+.footer-links h1,
+.footer-addresses h1,
+.footer-social-links h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "butler";
+  letter-spacing: 3px;
+}
 .footer-links h2,
 .footer-addresses h2,
 .footer-social-links h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-top: 20px;
   padding-bottom: 10px;
+  font-family: "inter";
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.footer-addresses p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "apercu";
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
 }
 .footer-links ul {
   list-style: none;
@@ -120,9 +222,12 @@ body {
 }
 .footer-links a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 5px 0px;
-  color: var(--main-text-color);
+  color: var(--secondary-text-color);
+  font-family: "apercu";
+  line-height: 30px;
+  font-weight: 400;
 }
 .footer-links a i {
   margin-right: 10px;
@@ -136,17 +241,18 @@ body {
 }
 .footer-social-links div span i {
   border: none;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--primary-btn-color);
   border-radius: 30px;
   margin: 0px 2px;
 }
 
-
 .footer-sub {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 5px 30px;
+  font-family: "inter";
+  font-size: 1.2rem;
 }
 
 /* footer ended */

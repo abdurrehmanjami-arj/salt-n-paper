@@ -141,21 +141,18 @@ body {
 
 /* footer started */
 .footer-main {
-  background-color: #0f0f0f;
+  background-color: var(--sub-body-color);
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 100%;
-  padding: 0px 20px;
 }
 
 .fotter-info,
 .footer-links,
 .footer-addresses,
 .footer-social-links {
-  flex: 1;
-  padding: 0px 70px;
+  padding: 0px 35px;
+  width: 23vw;
+  margin: 20px 11px;
 }
 .fotter-info img {
   max-width: 200px;
@@ -164,16 +161,40 @@ body {
 }
 .fotter-info p {
   margin-bottom: 15px;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.7;
+  font-family: "apercu";
+  color: var(--secondary-text-color);
 }
 
+.footer-links h1,
+.footer-addresses h1,
+.footer-social-links h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "butler";
+  letter-spacing: 3px;
+}
 .footer-links h2,
 .footer-addresses h2,
 .footer-social-links h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-top: 20px;
   padding-bottom: 10px;
+  font-family: "inter";
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.footer-addresses p{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "apercu";
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
 }
 .footer-links ul {
   list-style: none;
@@ -183,9 +204,12 @@ body {
 }
 .footer-links a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 5px 0px;
-  color: var(--main-text-color);
+  color: var(--secondary-text-color);
+  font-family: "apercu";
+  line-height: 30px;
+  font-weight: 400;
 }
 .footer-links a i {
   margin-right: 10px;
@@ -199,7 +223,7 @@ body {
 }
 .footer-social-links div span i {
   border: none;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--primary-btn-color);
   border-radius: 30px;
   margin: 0px 2px;
@@ -207,8 +231,10 @@ body {
 
 .footer-sub {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 5px 30px;
+  font-family: "inter";
+  font-size: 1.2rem;
 }
 
 /* footer ended */
