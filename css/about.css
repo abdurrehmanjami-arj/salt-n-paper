@@ -162,11 +162,11 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
-.franchise-container .container div h1 {
-  text-align: left;
+.franchise-container div h1 {
+  text-align: center;
 }
-.franchise-container .container div p {
-  text-align: left;
+.franchise-container div p {
+  text-align: center;
 }
 /* franchise-container ended */
 
@@ -192,7 +192,7 @@ body {
   margin: 10px 65px;
 }
 .sub-container {
-  width: 30%;
+  width: 25%;
   line-height: 40px;
   margin: 20px;
   text-align: center;
@@ -205,17 +205,20 @@ body {
 }
 
 .sub-container div h1 {
+  text-align: center;
   font-size: 32px;
   font-family: "apercu";
   font-weight: 400;
 }
 
 .sub-container div h2 {
+  text-align: center;
   color: var(--primary-btn-color);
   font-family: "apercu";
   letter-spacing: 5px;
 }
 .sub-container div p {
+  text-align: center;
   font-family: "apercu";
   font-size: 1.3rem;
   color: var(--secondary-text-color);
@@ -239,6 +242,87 @@ body {
   border-radius: 20px;
 }
 /* Express Franchises ended */
+
+/* Salt'n Pepper Village Franchise started */
+
+.franchise-container {
+  background-color: var(--sub-body-color);
+}
+
+.sub-franchise-container-heading {
+  text-align: center;
+}
+.sub-franchise-container-heading h1 {
+  font-size: 52px;
+  font-family: "apercu";
+  font-weight: 400;
+}
+.sub-franchise-container-heading h1 span {
+  font-family: "futurak";
+}
+
+.franchise-container > .sub-franchise-container-heading {
+  padding: 0px 25px;
+  text-align: center;
+  width: 100%;
+}
+
+/* .franchise-container div {
+  width: 100%;
+} */
+
+.sub-franchise-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+  line-height: 55px;
+}
+.sub-franchise-container div img {
+  margin-left: 30px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.sub-franchise-container div h2 {
+  color: var(--primary-btn-color);
+  letter-spacing: 10px;
+  font-family: "apercu";
+  font-size: 16px;
+  text-align: center;
+}
+.sub-franchise-container div h1 {
+  font-family: "apercu";
+  font-size: 32px;
+  text-align: left;
+}
+.sub-franchise-container div h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+}
+.sub-franchise-container div p {
+  color: var(--secondary-text-color);
+  font-family: "apercu";
+  font-size: 16px;
+  text-align: left;
+}
+
+.sub-franchise-container button {
+  padding: 15px 20px;
+  background-color: #28a745;
+  color: var(--main-text-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sub-franchise-container button span {
+  color: #28a745;
+  background-color: var(--main-text-color);
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+/* Salt'n Pepper Village Franchise ended */
 
 /* main ended */
 
