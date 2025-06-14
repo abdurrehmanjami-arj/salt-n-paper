@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -43,32 +43,32 @@ body {
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: var(--main-text-color);
-    font-size: 1.8rem;
-    font-weight: 500;
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .franchies-btn {
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 7px 16px;
-    border: 1px solid white;
-    border-radius: 30px;
-    background-color: var(--body-color);
-    color: var(--main-text-color);
-    cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 7px 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  cursor: pointer;
 }
 
 .order-btn {
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 7px 16px;
-    background-color: var(--primary-btn-color);
-    color: var(--main-text-color);
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 7px 16px;
+  background-color: var(--primary-btn-color);
+  color: var(--main-text-color);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 .arrow-btn {
@@ -82,10 +82,20 @@ body {
 /* main started */
 /* into container started */
 .intro-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.intro-container h1,
+.intro-container p {
   text-align: center;
 }
 
 .resturant-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.resturant-container h1,
+.resturant-container p {
   text-align: center;
 }
 .container {
@@ -94,21 +104,16 @@ body {
   gap: 20px;
   justify-content: space-evenly;
 }
+.container div {
+  align-self: flex-start;
+}
 .container div img {
   width: 50vw;
   height: 50vh;
 }
 /* into container ended */
 
-/* sub-section started */
-.sub-section {
-  text-align: center;
-  padding: 50px 100px;
-  margin-bottom: 30px;
-}
-/* sub-section ended */
-
-/* locations resturant started  */
+/* resturant started  */
 
 .resturant-container {
   padding: 50px 100px;
@@ -127,16 +132,16 @@ body {
 .intro-container p,
 .resturant-container p,
 .container p {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.8;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: var(--secondary-text-color);
 }
 
 .container {
   padding: 30px 0;
-  align-items: center;
+  /* align-items: center; */
   background-color: var(--body-color);
   margin: 30px 100px;
 }
@@ -148,10 +153,93 @@ body {
 
 .container div img {
   width: 100%;
-  height: auto;
   border-radius: 10px;
 }
-/* locations resturant ended  */
+/*  resturant ended  */
+
+/* franchise-container started */
+.franchise-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.franchise-container .container div h1 {
+  text-align: left;
+}
+.franchise-container .container div p {
+  text-align: left;
+}
+/* franchise-container ended */
+
+/* Express Franchises started */
+.express-franchises {
+  margin: 20px 0px;
+}
+.express-franchises > h1 {
+  text-align: center;
+  font-size: 48px;
+}
+.express-franchises > h1 > span {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px 65px;
+}
+.sub-container {
+  width: 30%;
+  line-height: 40px;
+  margin: 20px;
+  text-align: center;
+}
+.sub-container div img {
+  width: 100%;
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sub-container div h1 {
+  font-size: 32px;
+  font-family: "apercu";
+  font-weight: 400;
+}
+
+.sub-container div h2 {
+  color: var(--primary-btn-color);
+  font-family: "apercu";
+  letter-spacing: 5px;
+}
+.sub-container div p {
+  font-family: "apercu";
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+}
+.sub-container div button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "inter";
+  font-weight: 500;
+}
+
+.sub-container div button span {
+  background-color: var(--main-text-color);
+  color: var(--primary-btn-color);
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+/* Express Franchises ended */
+
 /* main ended */
 
 /* footer started */
@@ -182,15 +270,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.footer-links h1,
-.footer-addresses h1,
-.footer-social-links h1 {
-  font-size: 2rem;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  font-family: "butler";
-  letter-spacing: 3px;
-}
 .footer-links h2,
 .footer-addresses h2,
 .footer-social-links h2 {
@@ -202,7 +281,7 @@ body {
   font-weight: 400;
 }
 
-.footer-addresses p{
+.footer-addresses p {
   font-size: 1.5rem;
   margin-top: 20px;
   padding-bottom: 10px;
@@ -220,16 +299,14 @@ body {
 .footer-links a {
   text-decoration: none;
   font-size: 1.5rem;
-  padding: 5px 0px;
+  /* padding: 5px 0px; */
   color: var(--secondary-text-color);
   font-family: "apercu";
-  line-height: 30px;
+  /* line-height: 30px; */
   font-weight: 400;
 }
-.footer-links a i {
+.footer-links ul li a {
   margin-right: 10px;
-  width: 20px;
-  text-align: center;
 }
 
 .footer-social-links img {
