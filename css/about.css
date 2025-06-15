@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "futurak";
+  src: url("../fonts/futurak.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "butler";
+  src: url("../fonts/Butler_Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "apercu";
+  src: url("../fonts/Apercu-regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +106,11 @@ body {
   width: 80vw;
   margin: 0 auto;
 }
-.intro-container h1,
+.intro-container h1 {
+  text-align: center;
+  font-family: inter;
+  font-size: 3rem;
+}
 .intro-container p {
   text-align: center;
 }
@@ -120,10 +145,10 @@ body {
   margin-bottom: 30px;
 }
 
-.intro-container h1,
 .resturant-container h1,
 .container h1 {
-  font-size: 2.2rem;
+  font-family: inter;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 25px;
   color: var(--main-text-color);
@@ -155,12 +180,25 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+.container div h1 span {
+  font-family: "futurak";
+  font-weight: 500;
+}
 /*  resturant ended  */
 
 /* franchise-container started */
 .franchise-container {
   text-align: center;
   margin-bottom: 30px;
+}
+.franchise-container h1 span {
+  font-family: "futurak";
+  font-weight: 500;
+  font-size: 3rem;
+}
+.franchise-container h2 {
+  font-family: inter;
+  font-size: 2.5rem;
 }
 .franchise-container div h1 {
   text-align: center;
@@ -169,6 +207,26 @@ body {
   text-align: center;
 }
 /* franchise-container ended */
+
+/* Salt'n Pepper Express started */
+.express-container h1 {
+  font-family: "apercu";
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.express-container h1 span {
+  font-family: "futurak";
+}
+.express-container p {
+  font-family: "apercu";
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+.express-container section div p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+/* Salt'n Pepper Express ended */
 
 /* Express Franchises started */
 .express-franchises {
@@ -279,7 +337,6 @@ body {
   line-height: 55px;
 }
 .sub-franchise-container div img {
-  margin-left: 30px;
   width: 80%;
   border-radius: 10px;
 }
